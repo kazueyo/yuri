@@ -15,14 +15,11 @@ body {
 COMMON
 ================================================ */
 .title {
-    color: #ab0202;
-  background: -webkit-linear-gradient(top, #ab0202 30%, #943dff 50%, #0501ba 70%, #020026 10%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-    font-family: 'Dancing Script', cursive;
-    font-size: 7rem;
-    margin-bottom: 2rem;
+  font-size: 7rem;
+  margin-bottom: 2rem;
+  font-family: 'Roboto', sans-serif;
 }
+
 p {
     line-height: 1.7;
     font-size: 1.125rem;
@@ -130,6 +127,10 @@ HERO
     padding-top: 10vh;
 }
 
+.nantan{
+  color: rgb(39, 38, 38);
+}
+
 /*
 MENU
 ================================================ */
@@ -195,54 +196,26 @@ CONTACT
     background: rgba(255,255,255,.5);
 }
 
-/*========= LoadingのためのCSS ===============*/
 
-/* Loading背景画面設定　*/
-#splash {
-    /*fixedで全面に固定*/
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 999;
-  background:#333;
-  text-align:center;
-  color:#fff;
+/*========= レイアウトのためのCSS ===============*/
+
+#container{
+  width:100%;
+  height: 100vh;
+  background: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-/* Loading画像中央配置　*/
-#splash_logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+a{
+  color: #333;
 }
 
-/* Loading アイコンの大きさ設定　*/
-#splash_logo img {
-  width:260px;
+a:hover{
+   text-decoration: none;   
 }
-
-/* fadeUpをするアイコンの動き */
-
-.fadeUp{
-animation-name: fadeUpAnime;
-animation-duration:0.5s;
-animation-fill-mode:forwards;
-opacity: 0;
-}
-
-@keyframes fadeUpAnime{
-  from {
-    opacity: 0;
-  transform: translateY(100px);
-  }
-
-  to {
-    opacity: 1;
-  transform: translateY(0);
-  }
-}
-
 
 /*===モーダル表示のためのcss　*/
 
@@ -305,6 +278,11 @@ ul{
 a{
   color: #333;
 }
+
+span{
+  color: rgb(255, 255, 255);
+}
+
 
 a:hover,
 a:active{
