@@ -115,7 +115,7 @@ section {
 img{
   max-width:100%;
   height:auto;
-  vertical-align: middle;/*画像の下にできる余白を削除*/
+  vertical-align: 　top;/*画像の下にできる余白を削除*/
 }
 
 /*
