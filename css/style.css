@@ -102,7 +102,7 @@ section {
 /*===　サムネイル表示のためのcss　*/
 
 .gallery{/*ベースになるギャラリーを横並びに*/
-  display: flex;
+  display: table-cell;
     justify-content: space-between;
 }
 
@@ -251,7 +251,7 @@ a:hover{
 /*===　サムネイル表示のためのcss　*/
 
 .gallery{/*ベースになるギャラリーを横並びに*/
-  display: flex;
+  display: table-cell;
     justify-content: space-between;
 }
 
@@ -264,7 +264,7 @@ a:hover{
 img{
   max-width:100%;
   height:auto;
-  vertical-align: text-bottom;/*画像の下にできる余白を削除*/
+  vertical-align: middle;/*画像の下にできる余白を削除*/
 }
 
 /*========= レイアウトのためのCSS ===============*/
@@ -303,7 +303,7 @@ h1{
 }
 
 ul {
-  display: table-cell;
+  display: block;
   list-style-type: disc;
   margin-block-start: 1em;
   margin-block-end: 1em;
