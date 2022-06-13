@@ -70,7 +70,7 @@ section {
 /*===モーダル表示のためのcss　*/
 
 .hide-area{/*モーダル表示をする場所をあらかじめ隠す*/
-    display: none;
+    display: table-cell;
   }
   
   .modaal-fullscreen .modaal-content-container{/*full画面の色設定*/
@@ -220,7 +220,7 @@ a:hover{
 /*===モーダル表示のためのcss　*/
 
 .hide-area{/*モーダル表示をする場所をあらかじめ隠す*/
-  display: none;
+  display: table-cell;
 }
 
 .modaal-fullscreen .modaal-content-container{/*full画面の色設定*/
