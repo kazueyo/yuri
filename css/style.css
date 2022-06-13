@@ -70,7 +70,7 @@ section {
 /*===モーダル表示のためのcss　*/
 
 .hide-area{/*モーダル表示をする場所をあらかじめ隠す*/
-    display: table-cell;
+    display: none;
   }
   
   .modaal-fullscreen .modaal-content-container{/*full画面の色設定*/
@@ -220,7 +220,7 @@ a:hover{
 /*===モーダル表示のためのcss　*/
 
 .hide-area{/*モーダル表示をする場所をあらかじめ隠す*/
-  display: table-cell;
+  display: none;
 }
 
 .modaal-fullscreen .modaal-content-container{/*full画面の色設定*/
@@ -307,7 +307,7 @@ ul {
   list-style-type: disc;
   margin-block-start: 1em;
   margin-block-end: 1em;
-  margin-inline-start: 0px;
+  margin-inline-start: 10px;
   margin-inline-end: 0px;
   padding-inline-start: 40px;
 }
