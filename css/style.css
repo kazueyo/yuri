@@ -175,9 +175,7 @@ a:hover{
     background: #333;
     color: #fff;
     text-align: center;
-  }
-  
-  .modaal-fullscreen .modaal-close{/*ボタンの色、位置*/
+	    .modaal-fullscreen .modaal-close{/*ボタンの色、位置*/
     background:none;
     right:20px;
   }
