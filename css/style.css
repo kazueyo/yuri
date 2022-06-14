@@ -38,86 +38,6 @@ section {
     background-position: center center;
 }
 
-
-/*== グラデーション線から塗に変化する */
-
-.gradient4{
-    /*ボタンの形状*/
-    display: inline-block;
-    padding: 18px 60px;  
-    border-radius:30px;
-    text-decoration: none;
-    border:1px solid #583bfc;
-    color:#583bfc ;
-    outline: none;
-    /*アニメーションの指定*/ 
-    transition: all 0.4s ease-out;
-}
-
-/*hoverした際、グラデーションと影を付ける*/
-.gradient4:hover{
-    /*ボタンの形状*/
-    border-color:transparent;
-    color: #fff;
-    /*背景の色と形状*/
-    background: linear-gradient(270deg, #6cbcfa 0%, #ffe140 50%, #010998 100%);
-    background-size: 200% auto;
-    background-position: right center;
-    /*ボックスの影*/   
-    box-shadow: 0 5px 10px rgba(24, 1, 126, 0.4);
-}
-
-/*===モーダル表示のためのcss　*/
-
-.hide-area{/*モーダル表示をする場所をあらかじめ隠す*/
-    display: none;
-  }
-  
-  .modaal-fullscreen .modaal-content-container{/*full画面の色設定*/
-    background: #333;
-    color: #fff;
-    text-align: center;
-  }
-  
-  .modaal-fullscreen .modaal-close{/*ボタンの色、位置*/
-    background:none;
-    right:20px;
-  }
-  
-  /*クローズボタンの×の色変更*/
-  .modaal-close:focus:after,
-  .modaal-close:focus:before,
-  .modaal-close:hover:after,
-  .modaal-close:hover:before{
-    background:#666;
-  }
-  
-
-/*キャプション*/
-.caption{
-    display: block;
-    padding: 10px 0;
-}
-
-/*===　サムネイル表示のためのcss　*/
-
-.gallery{/*ベースになるギャラリーを横並びに*/
-  display: flex;
-    justify-content: space-between;
-}
-
-.gallery li{
-  width:33.333%;
-    padding: 0 10px;
-}
-
-/*画像の横幅を100%にしてレスポンシブ化*/
-img{
-  max-width:100%;
-  height:auto;
-  vertical-align: bottom;/*画像の下にできる余白を削除*/
-}
-
 /*
 HERO
 ================================================ */
@@ -215,6 +135,85 @@ a{
 
 a:hover{
    text-decoration: none;   
+}
+
+/*== グラデーション線から塗に変化する */
+
+.gradient4{
+    /*ボタンの形状*/
+    display: inline-block;
+    padding: 18px 60px;  
+    border-radius:30px;
+    text-decoration: none;
+    border:1px solid #583bfc;
+    color:#583bfc ;
+    outline: none;
+    /*アニメーションの指定*/ 
+    transition: all 0.4s ease-out;
+}
+
+/*hoverした際、グラデーションと影を付ける*/
+.gradient4:hover{
+    /*ボタンの形状*/
+    border-color:transparent;
+    color: #fff;
+    /*背景の色と形状*/
+    background: linear-gradient(270deg, #6cbcfa 0%, #ffe140 50%, #010998 100%);
+    background-size: 200% auto;
+    background-position: right center;
+    /*ボックスの影*/   
+    box-shadow: 0 5px 10px rgba(24, 1, 126, 0.4);
+}
+
+/*===モーダル表示のためのcss　*/
+
+.hide-area{/*モーダル表示をする場所をあらかじめ隠す*/
+    display: none;
+  }
+  
+  .modaal-fullscreen .modaal-content-container{/*full画面の色設定*/
+    background: #333;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .modaal-fullscreen .modaal-close{/*ボタンの色、位置*/
+    background:none;
+    right:20px;
+  }
+  
+  /*クローズボタンの×の色変更*/
+  .modaal-close:focus:after,
+  .modaal-close:focus:before,
+  .modaal-close:hover:after,
+  .modaal-close:hover:before{
+    background:#666;
+  }
+  
+
+/*キャプション*/
+.caption{
+    display: block;
+    padding: 10px 0;
+}
+
+/*===　サムネイル表示のためのcss　*/
+
+.gallery{/*ベースになるギャラリーを横並びに*/
+  display: flex;
+    justify-content: space-between;
+}
+
+.gallery li{
+  width:33.333%;
+    padding: 0 10px;
+}
+
+/*画像の横幅を100%にしてレスポンシブ化*/
+img{
+  max-width:100%;
+  height:auto;
+  vertical-align: bottom;/*画像の下にできる余白を削除*/
 }
 
 /*===モーダル表示のためのcss　*/
