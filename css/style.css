@@ -1,0 +1,507 @@
+@charset "UTF-8";
+
+/*
+GENERAL STYLING
+================================================ */
+html {
+    font-size: 100%;
+}
+body {
+	color: rgb(255, 255, 255);
+  font-family: "Yu ]gothic Medium","游ゴシック Medium",YuGothic,"游ゴシック体","ヒラギノ角ゴ Pro W3",sans-serif;
+}
+
+/*
+COMMON
+================================================ */
+.title {
+  font-size: 7rem;
+  margin-bottom: 2rem;
+  font-family:'Cardo', serif;
+}
+
+p {
+    line-height: 1.7;
+    font-size: 1.125rem;
+}
+
+.container {
+
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+}
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+/*== グラデーション線から塗に変化する */
+
+.gradient4{
+    /*ボタンの形状*/
+    display: inline-block;
+    padding: 18px 60px;  
+    border-radius:30px;
+    text-decoration: none;
+    border:1px solid #2474ff;
+    color: #2474ff;
+    outline: none;
+    /*アニメーションの指定*/ 
+    transition: all 0.4s ease-out;
+}
+
+/*hoverした際、グラデーションと影を付ける*/
+.gradient4:hover{
+    /*ボタンの形状*/
+    border-color:transparent;
+    color: #fff;
+    /*背景の色と形状*/
+    background: linear-gradient(270deg, #6cbcfa 0%, #ffe140 50%, #010998 100%);
+    background-size: 200% auto;
+    background-position: right center;
+    /*ボックスの影*/   
+    box-shadow: 0 5px 10px #012a70;
+}
+
+/*===モーダル表示のためのcss　*/
+
+.hide-area{/*モーダル表示をする場所をあらかじめ隠す*/
+    display: none;
+  }
+  
+  .modaal-fullscreen .modaal-content-container{/*full画面の色設定*/
+    background: #333;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .modaal-fullscreen .modaal-close{/*ボタンの色、位置*/
+    background:none;
+    right:20px;
+  }
+  
+  /*クローズボタンの×の色変更*/
+  .modaal-close:focus:after,
+  .modaal-close:focus:before,
+  .modaal-close:hover:after,
+  .modaal-close:hover:before{
+    background:#666;
+  }
+  
+
+/*キャプション*/
+.caption{
+    display: block;
+    padding: 10px 0;
+}
+
+/*===　サムネイル表示のためのcss　*/
+
+.gallery{/*ベースになるギャラリーを横並びに*/
+  display: flex;
+    justify-content: space-between;
+}
+
+.gallery li{
+  width:33.333%;
+    padding: 0 10px;
+}
+
+/*画像の横幅を100%にしてレスポンシブ化*/
+img{
+  max-width:100%;
+  height:auto;
+  vertical-align: bottom;/*画像の下にできる余白を削除*/
+}
+
+/*
+HERO
+================================================ */
+.hero {
+    background-image: url(../images/background.jpg);
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.nantan{
+  color: rgb(39, 38, 38);
+}
+
+/*
+MENU
+================================================ */
+.menu {
+    background-image: url(../images/lily.jpg);
+    display: flex;
+    align-items: center;
+}
+.wrapper {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.menu-list tr {
+    font-size: 1.125rem;
+    margin-bottom: .5rem;
+    line-height: 1.7;
+}
+.menu-list th {
+    font-weight: normal;
+}
+.menu-list td {
+    padding-left: 1rem;
+}
+
+/*
+CONTACT
+================================================ */
+.contact {
+    background-image: url(../images/computer.jpg);
+    text-align: center;
+    padding-top: 8vh;
+}
+.btn {
+    background: #555;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 1rem 3.5rem;
+    border-radius: 6px;
+    display: inline-block;
+    margin: 2rem 0 2.25rem;
+}
+.btn:hover {
+    background: #777;
+}
+.contact-sns {
+    display: flex;
+    justify-content: center;
+}
+.contact-sns a {
+    background: #fff;
+    width: 3.75rem;
+    height: 3.75rem;
+    display: inline-block;
+    margin: 0 .5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    padding: .75rem 0 0 .125rem;
+    color: #555;
+}
+.contact-sns a:hover {
+    background: rgba(255,255,255,.5);
+}
+
+
+/*========= レイアウトのためのCSS ===============*/
+
+#container{
+  width:100%;
+  height: 100vh;
+  background: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+a{
+  color: #333;
+}
+
+a:hover{
+   text-decoration: none;   
+}
+
+/*===モーダル表示のためのcss　*/
+
+.hide-area{/*モーダル表示をする場所をあらかじめ隠す*/
+  display: none;
+}
+
+.modaal-fullscreen .modaal-content-container{/*full画面の色設定*/
+  background: #333;
+  color: #fff;
+  text-align: center;
+}
+
+.modaal-fullscreen .modaal-close{/*ボタンの色、位置*/
+  background:none;
+  right:20px;
+}
+
+/*クローズボタンの×の色変更*/
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before{
+  background:#666;
+}
+
+/*キャプション*/
+.caption{
+    display: block;
+    padding: 10px 0;
+}
+
+/*===　サムネイル表示のためのcss　*/
+
+.gallery{/*ベースになるギャラリーを横並びに*/
+  display: flex;
+    justify-content: space-between;
+}
+
+.gallery li{
+  width:33.333%;
+    padding: 0 10px;
+}
+
+/*画像の横幅を100%にしてレスポンシブ化*/
+img{
+  max-width:100%;
+  height:auto;
+  vertical-align: bottom;/*画像の下にできる余白を削除*/
+}
+
+/*========= レイアウトのためのCSS ===============*/
+
+ul{
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  color: #333;
+}
+
+span{
+  color: rgb(255, 255, 255);
+}
+
+p.small{
+  line-height:90%;
+  }
+
+a:hover,
+a:active{
+  text-decoration: none;
+}
+
+h1{
+  font-family:'Cardo', serif;
+  text-align: center;
+  font-size:6vw;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin:30px 0;
+  color: #333;     /* 文字色指定 */
+}
+
+p.big{
+  margin:0 10px 10px 10px;
+  color: #333;     /* 文字色指定 */
+  text-align: center;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+/*========= スクロールダウンのためのCSS ===============*/
+
+/*======縦線が動いてスクロールを促す =======*/
+
+/*スクロールダウン全体の場所*/
+.scrolldown1{
+  /*描画位置※位置は適宜調整してください*/
+position:absolute;
+left:50%;
+bottom:70px;
+  /*全体の高さ*/
+height:0px;
+}
+
+/*Scrollテキストの描写*/
+.scrolldown1 span{
+  /*描画位置*/
+position: absolute;
+left:-15px;
+top: -15px;
+  /*テキストの形状*/
+color: rgb(39, 38, 38);
+font-size: 0.7rem;
+letter-spacing: 0.05em;
+}
+
+/* 線の描写 */
+.scrolldown1::after{
+content: "";
+  /*描画位置*/
+position: absolute;
+top: 0;
+  /*線の形状*/
+width: 1px;
+height: 30px;
+background:rgb(48, 46, 46);
+  /*線の動き1.4秒かけて動く。永遠にループ*/
+animation: pathmove 1.4s ease-in-out infinite;
+opacity:0;
+}
+
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes pathmove{
+0%{
+  height:0;
+  top:0;
+  opacity: 0;
+}
+30%{
+  height:30px;
+  opacity: 1;
+}
+100%{
+  height:0;
+  top:50px;
+  opacity: 0;
+}
+}
+
+/*========= レイアウトのためのCSS ===============*/
+#header{
+  width:100%;
+  height: 100vh;
+  position: relative;
+} 
+
+#header:before{
+  content: '';
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:-1;
+  width:100%;
+  height: 100vh;
+  /*背景画像設定*/
+  background-image: url(../images/lily.jpg) no-repeat center;
+  background-size:cover;
+}
+
+/*========= スクロールダウンのためのCSS ===============*/
+
+/*======縦線が動いてスクロールを促す =======*/
+
+/*スクロールダウン全体の場所*/
+.scrolldown2{
+  /*描画位置※位置は適宜調整してください*/
+position:absolute;
+left:50%;
+bottom:70px;
+  /*全体の高さ*/
+height:0px;
+}
+
+/*Scrollテキストの描写*/
+.scrolldown2 span{
+  /*描画位置*/
+position: absolute;
+left:-15px;
+top: -15px;
+  /*テキストの形状*/
+color: rgb(255, 255, 255);
+font-size: 0.7rem;
+letter-spacing: 0.05em;
+}
+
+/* 線の描写 */
+.scrolldown2::after{
+content: "";
+  /*描画位置*/
+position: absolute;
+top: 0;
+  /*線の形状*/
+width: 1px;
+height: 30px;
+background:rgb(255, 255, 255);
+  /*線の動き1.4秒かけて動く。永遠にループ*/
+animation: pathmove 1.4s ease-in-out infinite;
+opacity:0;
+}
+
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes pathmove{
+0%{
+  height:0;
+  top:0;
+  opacity: 0;
+}
+30%{
+  height:30px;
+  opacity: 1;
+}
+100%{
+  height:0;
+  top:50px;
+  opacity: 0;
+}
+}
+
+/*========= レイアウトのためのCSS ===============*/
+#header2{
+  width:100%;
+  height: 100vh;
+  position: relative;
+} 
+
+#header2:before{
+  content: '';
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:-1;
+  width:100%;
+  height: 100vh;
+  /*背景画像設定*/
+  background-image: url(../images/background.jpg) no-repeat center;
+  background-size:cover;
+}
+
+
+/*
+MOBILE SIZE
+================================================ */
+@media (max-width: 700px) {
+    .title {
+        font-size: 4rem;
+    }
+    p {
+      padding: 0 1rem;
+    }
+    p,
+    .menu-list li {
+        font-size: 1rem;
+    }
+    .hero {
+        padding-top: 12vh;
+    }
+     
+}
+
+@media screen and (max-width:768px){
+
+  #header,
+  #header:before{
+height: 90vh;    
+  }
+  
+}
