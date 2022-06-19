@@ -302,12 +302,6 @@ h1{
   color: #333;     /* 文字色指定 */
 }
 
-p.big{
-  margin:0 10px 10px 10px;
-  color: #333;     /* 文字色指定 */
-  word-wrap : break-word;
-  text-align: center;
-}
 
 ul {
   display: block;
