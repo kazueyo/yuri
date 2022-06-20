@@ -149,6 +149,7 @@ MENU
     font-size: 1.125rem;
     margin-bottom: .5rem;
     line-height: 1.7;
+	text-align: left;
 }
 .menu-list th {
     font-weight: normal;
